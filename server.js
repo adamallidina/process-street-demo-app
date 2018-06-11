@@ -9,7 +9,7 @@ var express = require('express'),
 
 var simpleServer = express();
 
-simpleServer.set('port', process.env.SERVER_PORT || 3000);
+simpleServer.set('port', process.env.PORT || 3000);
 
 simpleServer.use(express.static(path.join(__dirname, SERVING_DIR_NAME)));
 
