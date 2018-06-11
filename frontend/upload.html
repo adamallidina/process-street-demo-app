@@ -1,0 +1,35 @@
+<div class="video-uploader">
+  <h4>  Upload Video </h4>
+
+  <!-- this form element encapsulates all upload functionality -->
+  <form id="fileupload"  method="POST" enctype="multipart/form-data" data-ng-app="app" data-ng-controller="Upload" data-file-upload="options" >
+          <div class="row">
+              <div class="col-lg-7">
+                  <span class="btn btn-success fileinput-button">
+                      <i class="fas fa-plus-circle"></i>
+                      <span>Add File</span>
+                      <input type="file" name="files[]" ng-disabled="disabled">
+                  </span>
+              </div>
+          </div>
+          <table class="table table-striped files ng-cloak">
+              <tr data-ng-repeat="file in queue" style="{{fileUploadStatusColor}}">
+                  <td>
+                      <p class="name" data-ng-switch data-on="true">
+                          <span data-ng-switch-default>{{file.name}}</span>
+                      </p>
+                      <strong data-ng-show="file.error" class="error text-danger">{{file.error}}</strong>
+                  </td>
+                  <td>
+                    <progress max='100' value="{{uploadProgress}}" ng-if="showUploadProgress"></progress>
+                  </td>
+                  <td>
+                      <p class="size">{{file.size | formatFileSize}}</p>
+                  </td>
+              </tr>
+          </table>
+  </form>
+
+  <!-- iFrame for display of embedded Wistia video player -->
+  <iframe ng-src="{{ url }}" ng-if="showIframe"></iframe>
+</div>

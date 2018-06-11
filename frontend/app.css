@@ -1,0 +1,17 @@
+body {
+  padding: 25px;
+  width: 50%;
+}
+
+app {
+  font-family: Roboto;
+}
+
+.btn-success {
+  margin: 10px;
+}
+
+.video-uploader-view-wrapper {
+  width: 80%;
+  margin: 21px;
+}

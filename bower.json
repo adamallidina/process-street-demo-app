@@ -1,0 +1,18 @@
+{
+  "name": "wistia-video-uploader-angular",
+  "description": "",
+  "main": "frontend/app.js",
+  "authors": [
+    "adam <adam@allidina.me>"
+  ],
+  "license": "wtfpl",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

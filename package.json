@@ -1,0 +1,16 @@
+{
+  "name": "wistia-video-uploader-angular",
+  "version": "0.1.0",
+  "devDependencies": {
+    "express": "4.15.2",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.2",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node server.js",
+    "test": "karma start karma.config.js"
+  }
+}
