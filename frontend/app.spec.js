@@ -62,6 +62,8 @@ describe('Upload Controller Unit Tests', function () {
     expect($scope.mockResourceTrusted).toBe(true);
     expect($scope.showIframe).toBe(true);
     expect($scope.mockUploadListCleared).toBe(true);
+
+    expect($scope.url).toEqual('https://fast.wistia.net/embed/iframe/' + mockData.result.hashed_id);
   });
 
 });
